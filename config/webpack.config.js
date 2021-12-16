@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { resolve, join } = require('path');
-const path = require('path');
+const fs = require('fs');
 const glob = require('glob');
 
 //读取文件的html
@@ -40,7 +40,7 @@ module.exports = {
   },
   resolve: {
     alias:{
-      "@src": path.resolve(__dirname, './src')
+      "@scr": resolve(__dirname, './src/')
     },
     extensions: ['.tsx', '.ts', '.js'],
   },

@@ -12,6 +12,6 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*"],
+  "include": ["scripts/*","src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

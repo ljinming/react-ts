@@ -1,5 +1,7 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//export function ():void => {return <h1>Hello from index and ts!</h1>};
+
+export default () => {
+  return <div>hello typescript</div>;
+};
