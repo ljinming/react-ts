@@ -1,4 +1,4 @@
-const ignoredFiles = require('react-dev-utils/ignoredFiles');
+// const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const paths = require('./paths');
 const path = require('path');
 
@@ -27,6 +27,9 @@ module.exports = function (allowHost) {
         hot: true,
         transportMode: 'ws',
         injectClient: false,
+        // watchOptions: {
+        //   ignored: ignoredFiles(paths.appSrc),
+        // },
         host,
         overlay: false,
         historyApiFallback: {
@@ -35,6 +38,7 @@ module.exports = function (allowHost) {
           disableDotRule: true,
           index: paths.publicUrlOrPath,
         },
+        
         public: allowHost,
         proxy: {
           '/api': 'http://localhost:3000',

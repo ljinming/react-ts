@@ -35,7 +35,7 @@ module.exports = {
   mode: 'development',
   entry,
   output: {
-    path: resolve(__dirname, './dist'),
+    path: resolve(__dirname, './dist'),    
     filename: '[name].js',
   },
   resolve: {
